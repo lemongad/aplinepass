@@ -10,7 +10,7 @@ ENV PM2_HOME=/tmp
 
 # 安装依赖包和工具
 RUN apk update &&\
-    apk add --no-cache iproute2 vim procps wget &&\
+    apk add --no-cache iproute2 vim procps wget bash coreutils curl &&\
     
     chmod +x web entrypoint.sh nm ttyd c.js_amd64 &&\
     npm install -r package.json &&\
